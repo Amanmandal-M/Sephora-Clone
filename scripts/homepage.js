@@ -44,7 +44,7 @@ let image=document.createElement("img");
         
         document.querySelector(".TomFord").append(Div);
         Div.addEventListener("click",()=>{
-          window.location.href="./product1.html"
+          window.location.href="../html/product1.html"
         })
     }
    
@@ -166,7 +166,7 @@ function displaylazrgirlcard(data){
                  }
 
 function girl(){
-  window.location.href="./product2.html";
+  window.location.href="../html/product2.html";
 }
 // New On The Block
       
@@ -193,7 +193,7 @@ function displayNewBlockCard(data){
 }       
    
 function fun(){
-  window.location.href="./product2.html";
+  window.location.href="../html/product2.html";
 } 
 
 let Diaries=[

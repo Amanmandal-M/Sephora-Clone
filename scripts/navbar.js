@@ -5,7 +5,7 @@ function navbar(){
     <div class="topNav">
         <div id="Image">
             <a href="">
-                <img src="c.jpg" alt="" href="">
+                <img src="../images/c.jpg" alt="" href="">
             </a>
         </div>
         <div id="slash"></div>
@@ -48,7 +48,7 @@ function navbar(){
     <div class="topNav1">
         <div id="webName">
             <div id="search">
-                <a href="product1.html">
+                <a href="../html/product1.html">
                     <i class="fas fa-search fa-xs" id="searchbar"></i>
                 </a>
               
@@ -58,16 +58,16 @@ function navbar(){
                 <h4>C&nbsp;4&nbsp;R&nbsp;A</h4>
             </div>
             <div id="icons">
-                <a href="admin.html">
+                <a href="../html/admin.html">
                     <i class="fas fa-user fa-xs"  id="admin">&nbsp;Admin</i>
                 </a>
-                <a href="cart.html">
+                <a href="../html/cart.html">
                     <img src="https://th.bing.com/th/id/OIP.wV394P0dINJ15K2rCqkK9QHaHa?pid=ImgDet&rs=1" alt="cart">
                 </a>
 
                 <div id="nav-dropdown">
                     <div id="login">
-                        <a  href="login.html">
+                        <a  href="../html/login.html">
                             <i class="fas fa-user fa-xs" id="searchbar">&nbsp;Login</i>
                         </a>
                     </div>
@@ -93,7 +93,7 @@ function navbar(){
                     <a href="#">SALE</a>
                 </li>
                 <li>
-                    <a href="product1.html">MAKEUP
+                    <a href="../html/product1.html">MAKEUP
                     </a>
                     
                     <ul class="submenu">
@@ -185,7 +185,7 @@ function navbar(){
                             <a href="#">Women</a>
                             <ul class="submenu-2">
                                 <li>
-                                    <a href="product1.html">Perfume</a>
+                                    <a href="../html/product1.html">Perfume</a>
                                 </li>
                                 <li>
                                     <a href="#">Body spray & Deodrants</a>
@@ -196,7 +196,7 @@ function navbar(){
                             <a href="#">Men</a>
                             <ul class="submenu-2">
                                 <li>
-                                    <a href="product2.html">Perfume</a>
+                                    <a href="../html/product2.html">Perfume</a>
                                 </li>
                                 <li>
                                     <a href="#">Body spray & Deodrants</a>
@@ -245,8 +245,3 @@ function navbar(){
         </div>
     </div>`
 }
-
-
-
-// console.log(navbar)
-// export {navbar}

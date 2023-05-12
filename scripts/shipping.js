@@ -1,10 +1,7 @@
-//localStorage.setItem("userdata",JSON.stringify(u1));
 localStorage.setItem("promoCodeApplied",false);
-// localStorage.setItem("finalPrice",0);
 
 //start cart
 let localUserData = JSON.parse(localStorage.getItem("userdata"));
-//console.log("localuserData", localUserData)
 let id = localStorage.getItem("userId")
 let cartItemDiv = document.querySelector("#shippingCart")
 
@@ -13,12 +10,12 @@ let overView  = document.querySelector("#overview");
 let editBagBtn = document.getElementById("shopmore-btn");
 
 editBagBtn.addEventListener("click", ()=>{
-    window.location.href ="./cart.html";
+    window.location.href ="../html/cart.html";
 })
 
 let continueBtn = document.querySelector("#checkout-btn")
 continueBtn.addEventListener("click",()=>{
-    window.location.href ="./payment.html";
+    window.location.href ="../html/payment.html";
 })
 //******************************************** */
 ///main part starts
@@ -32,12 +29,8 @@ renderCardItems(localUserData)
 ///main part ends
 
 
-
-
-
 function renderCardItems(json){
     let arr  = json.cartItems;
-    //displayCart(arr)
    cartItemDiv.innerHTML= null;
 
    
@@ -132,13 +125,8 @@ function cartDiv (id,name,category,count,price,image,avgRating,discount){
         <h3><i class="fa-solid fa-truck"></i></h3>
        
             <div><h3> <i class="fa-regular fa-circle-dot"></i>Delivery within 3 - 7 days</h3></div>
-            
-            
         
     </div>
-
-
-
 
 </div>`
 }
@@ -146,7 +134,7 @@ function cartDiv (id,name,category,count,price,image,avgRating,discount){
 
 let paymentBtn = document.querySelector(".payment-btn");
 paymentBtn.addEventListener("click",()=>{
-  window.location.href ="./payment.html";
+  window.location.href ="../html/payment.html";
 })
 
 // id2

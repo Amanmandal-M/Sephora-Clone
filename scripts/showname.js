@@ -6,14 +6,6 @@
 
  LoginName.innerHTML = userName;
 
-//  if(LoginName.innerHTML == "LogIn"){
-
-//     LoginName.addEventListener('click', ()=>{
-//         window.location.href = './login.html'
-//     })
-//  }
-
-
 
  const signout = document.getElementById('signout');
  signout.addEventListener('click', () => {

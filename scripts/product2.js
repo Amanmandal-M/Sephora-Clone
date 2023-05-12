@@ -130,14 +130,12 @@ section.classList.add("active");
 overlay.addEventListener("click", addedtoBag);
 function addedtoBag(){
 section.classList.remove("active");
-// window.location.href="cart.html";
 }
 
 closeBtn.addEventListener("click", cancel);
 
 function cancel(){
   section.classList.remove("active");
-  // window.location.href="cart.html";
 }
 
 

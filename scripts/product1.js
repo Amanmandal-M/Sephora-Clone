@@ -11,27 +11,23 @@ loginName.innerHTML = ' ' + PrUserName;
 
 
 let cartproducts = JSON.parse(localStorage.getItem("cart")) || [];
-// Fetching api from the JSON Server :-
-// append spinner
-// let productgrid=document.getElementsByClassName("container");
 
 function showdata() {
   document.querySelector(".container").innerHTML = `
   <div id="loading" style=" background-color:white; height:100px; width:100%"; >
-  <img src="./Spinner-5.gif" alt="error">
+  <img src="../images/Spinner-5.gif" alt="error">
   <p>Please wait page is loading ...</p>
    </div>
   `
 }
 let bag = [];
-// let url="https://fakestoreapi.com/products";
+
 let url = "https://636f9027f2ed5cb047e01947.mockapi.io/Project_2_Products";
 fetch(url)
   .then((res) => res.json())
   .then((data) => {
     bag = data;
     showdata()
-    // console.log(data);
     setTimeout(() => {
       displayCard(data);
     }, 1000)
@@ -73,7 +69,6 @@ function search() {
   let newData = bag.filter(function (elem) {
     return elem.title.toLowerCase().includes(q.toLowerCase());
   });
-  console.log(newData);
   displayCard(newData);
 }
 search()
@@ -105,10 +100,7 @@ function displayCard(data) {
 
       localStorage.setItem("cart", JSON.stringify(cartproducts));
 
-      // alert("Product added to cart");
       showfeed()
-      //add to user data for cart page
-
       addToCart(elem)
     });
 
@@ -138,14 +130,12 @@ function showfeed() {
 overlay.addEventListener("click", addedtoBag);
 function addedtoBag() {
   section.classList.remove("active");
-  // window.location.href="cart.html";
 }
 
 closeBtn.addEventListener("click", cancel);
 
 function cancel() {
   section.classList.remove("active");
-  // window.location.href="cart.html"; 
 }
 
 

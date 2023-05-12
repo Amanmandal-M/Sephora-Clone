@@ -162,7 +162,7 @@ function fetch_button() {
 
     Rightdiv.innerHTML = `
     <div id="loading" style=" background-color:white; height:6100px;" >
-        <img src="./Spinner-5.gif" alt="error">
+        <img src="../images/Spinner-5.gif" alt="error">
         <p>Please wait page is loading ...</p>
     </div>
   `;
@@ -224,7 +224,7 @@ function callBut() {
     document.getElementById("but").nextElementSibling.innerHTML = "";
     document.getElementById("but").nextElementSibling.innerHTML = `
         <div id="loading" style="width: 410%;" >
-            <img src="./Spinner-5.gif" alt="error">
+            <img src="../images/Spinner-5.gif" alt="error">
             <p>Please wait page is loading ...</p>
         </div>
       `;
@@ -234,7 +234,7 @@ function callBut() {
     document.getElementById("but").nextElementSibling.innerHTML = "";
     document.getElementById("but").nextElementSibling.innerHTML = `
        <div id="loading" style="width: 410%;" >
-          <img src="./Spinner-5.gif" alt="error">
+          <img src="../images/Spinner-5.gif" alt="error">
           <p>Please wait page is loading ...</p>
        </div>
       `;
@@ -244,7 +244,7 @@ function callBut() {
     document.getElementById("but").nextElementSibling.innerHTML = "";
     document.getElementById("but").nextElementSibling.innerHTML = `
        <div id="loading" style="width: 410%;" >
-          <img src="./Spinner-5.gif" alt="error">
+          <img src="../images/Spinner-5.gif" alt="error">
           <p>Please wait page is loading ...</p>
        </div>
       `;
@@ -254,7 +254,7 @@ function callBut() {
     document.getElementById("but").nextElementSibling.innerHTML = "";
     document.getElementById("but").nextElementSibling.innerHTML = `
        <div id="loading" style="width: 410%;" >
-          <img src="./Spinner-5.gif" alt="error">
+          <img src="../images/Spinner-5.gif" alt="error">
           <p>Please wait page is loading ...</p>
        </div>
       `;
@@ -264,7 +264,7 @@ function callBut() {
     document.getElementById("but").nextElementSibling.innerHTML = "";
     document.getElementById("but").nextElementSibling.innerHTML = `
        <div id="loading" style="width: 410%;" >
-          <img src="./Spinner-5.gif" alt="error">
+          <img src="../images/Spinner-5.gif" alt="error">
           <p>Please wait page is loading ...</p>
        </div>
       `;
@@ -570,7 +570,6 @@ async function AddPro(data) {
       }, 1000);
 
       arr.push(finalProduct);
-      console.log(arr);
       addD(arr);
     } else {
       alert("Product Not Added ! Please try again !");
@@ -876,7 +875,7 @@ function WelcomeLogin() {(251, 243, 244)
     document.querySelector("#Right").innerHTML = "";
     document.querySelector("#Right").innerHTML = `
       <div id="loading" style=" background-color:white; height:6100px;" >
-        <img src="./Spinner-5.gif" alt="error">
+        <img src="../images/Spinner-5.gif" alt="error">
         <p>Please wait page is loading ...</p>
      </div>
     `;

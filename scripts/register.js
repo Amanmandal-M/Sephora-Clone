@@ -52,7 +52,6 @@ sub_btn.addEventListener('click', () => {
     let mobileNo = document.getElementById('mobileNo').value;
 
     if (username == '' || email == '' || password == '' || mobileNo == '') {
-        // alert('Please enter all fields')
         Modal_div.style.display = 'flex';
         AlertMessage.innerHTML = 'Please enter all the fields !';
     }
@@ -77,22 +76,16 @@ const CheckUserIfExists = async (username) => {
         let Check_res = await fetch(RegisterUrl, {
             method: 'GET'
         })
-        // console.log(Check_res);
         if (Check_res.ok) {
             let data = await Check_res.json();
-            // console.log('resDATA', data);
             let DATA = data.filter((el) => {
                 if (el.username == username) {
-                    // let Name = el.username
-                    // console.log(el)
                     return el;
                 }
             });
 
-            // console.log('DATA', DATA)
             if (DATA.length !== 0) {
                 if (username == DATA[0].username) {
-                    // alert('User Already exists');
                     Modal_div.style.display = 'flex';
                     AlertMessage.innerHTML = 'User Already Exists !';
                 }
@@ -108,7 +101,6 @@ const CheckUserIfExists = async (username) => {
 
     }
     catch (error) {
-        // alert('Error while fetching')
         console.log('error', error)
     }
 }
@@ -130,8 +122,6 @@ const RegisterNewUser = async (userObj) => {
         // console.log(reg_req)
         if (reg_req.ok) {
             let data = await reg_req.json()
-            // console.log(data)
-            // alert("Registerd Sucessfully")
             Modal_div.style.display = 'flex';
             AlertMessage.innerHTML = 'Registered Successfully !';
             setTimeout(function(){
@@ -139,8 +129,6 @@ const RegisterNewUser = async (userObj) => {
              }, 3000);
 
         }
-
-        // console.log(data)
     }
     catch (error) {
         console.log('er', error)
